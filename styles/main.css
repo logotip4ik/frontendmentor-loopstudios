@@ -38,6 +38,7 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  position: relative;
 }
 
 header nav {
@@ -206,7 +207,7 @@ header .headline {
   margin-top: auto;
   margin-bottom: 10vh;
   line-height: 0.9;
-  padding: 3rem;
+  padding: 3.5vw;
   border: 2px solid white;
 }
 
@@ -548,7 +549,12 @@ footer {
     display: none;
   }
   header > .headline {
-    font-size: 8vw;
+    font-size: 7vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   main .landing {
     -webkit-box-orient: vertical;
